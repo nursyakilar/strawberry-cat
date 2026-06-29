@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ===== SEO META TAGS ===== -->
+  <title>Strawberry Cat — A Small Bakery Café</title>
+  <meta name="description" content="Strawberry Cat is a cozy bakery café for slow mornings, quiet study, and good company. Simple cakes, warm drinks, and a calm cat-inspired space to stay a while.">
+  <meta name="keywords" content="bakery, cafe, strawberry cat, cat cafe, study cafe, quiet cafe, bakery near me, dessert cafe">
+  <meta name="author" content="Strawberry Cat Bakery">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.strawberrycat-bakery.com/">
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:title" content="Strawberry Cat — A Small Bakery Café">
+  <meta property="og:description" content="A calm, cat-inspired bakery café for slow mornings, quiet study, and good company.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/og-strawberry-cat.jpg">
+  <meta property="og:url" content="https://www.strawberrycat-bakery.com/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon (replace with real cat-mark favicon) -->
+  <link rel="icon" href="images/favicon.png" type="image/png">
+
+  <!-- Fonts: Fraunces (display, warm serif) + Nunito (rounded, readable body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..700,1&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Skip link for keyboard / screen reader users -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ===================== HEADER / NAV ===================== -->
+  <header class="site-header" id="site-header">
+    <nav class="navbar" aria-label="Primary">
+      <a href="#home" class="logo" aria-label="Strawberry Cat — home">
+        <svg class="logo-mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+          <path d="M24 8c-2 0-3.6 1.6-4 4-2.6-3-6-3-7 .8-.8 2.4.6 4.6 2.6 5.6C10 21 8 25 8 29c0 8.8 7.2 15 16 15s16-6.2 16-15c0-4-2-8-7.6-10.6 2-1 3.4-3.2 2.6-5.6-1-3.8-4.4-3.8-7-.8-.4-2.4-2-4-4-4z" fill="var(--strawberry)"/>
+          <path d="M24 14c-1 1.6-1 3.4 0 5 1-1.6 1-3.4 0-5z" fill="var(--leaf)"/>
+          <circle cx="18.5" cy="27" r="1.6" fill="var(--ink)"/>
+          <circle cx="29.5" cy="27" r="1.6" fill="var(--ink)"/>
+          <path d="M21 31c1 1.4 5 1.4 6 0" stroke="var(--ink)" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+          <circle cx="14.5" cy="29" r="2.2" fill="var(--soft-pink)" opacity="0.8"/>
+          <circle cx="33.5" cy="29" r="2.2" fill="var(--soft-pink)" opacity="0.8"/>
+        </svg>
+        <span class="logo-text">Strawberry Cat</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#menu" class="nav-link">Menu</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#reviews" class="nav-link">Reviews</a></li>
+        <li><a href="#visit" class="nav-link">Visit Us</a></li>
+        <li><a href="#contact" class="nav-link nav-link-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="home" aria-label="Welcome">
+      <div class="hero-bg" aria-hidden="true">
+        <svg class="hero-blob" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMax slice">
+          <path d="M0,500 C200,420 280,620 480,560 C700,500 760,300 1000,360 C1140,395 1200,460 1200,460 L1200,800 L0,800 Z" fill="var(--beige)"/>
+        </svg>
+        <span class="floating-icon icon-1" aria-hidden="true">🐾</span>
+        <span class="floating-icon icon-2" aria-hidden="true">🍓</span>
+        <span class="floating-icon icon-3" aria-hidden="true">🐾</span>
+      </div>
+
+      <div class="hero-content fade-in">
+        <p class="eyebrow">A small bakery, gently disguised as a cat's favourite napping spot</p>
+        <h1 class="hero-title">Slow mornings, soft pastries,<br> & a little bit of cat.</h1>
+        <p class="hero-subtitle">Strawberry Cat is a quiet corner for simple food, warm drinks, and the kind of company that makes you want to stay a while longer.</p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-primary">See the Menu</a>
+          <a href="#visit" class="btn btn-secondary">Visit Us</a>
+        </div>
+      </div>
+
+      <div class="hero-image fade-in">
+        <div class="hero-photo-frame">
+          <img
+            src="images/strawberry_cat.jpg"
+            alt="A cosy bakery counter with strawberry pastries and a cat curled up nearby"
+            loading="eager"
+            width="640" height="760">
+          <svg class="paw-badge" viewBox="0 0 100 100" aria-hidden="true">
+            <circle cx="50" cy="50" r="50" fill="var(--strawberry)"/>
+            <g fill="var(--warm-white)">
+              <ellipse cx="50" cy="60" rx="20" ry="16"/>
+              <circle cx="32" cy="38" r="8"/>
+              <circle cx="50" cy="30" r="8"/>
+              <circle cx="68" cy="38" r="8"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll to learn more">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- divider -->
+    <div class="divider divider-scallop" aria-hidden="true"></div>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="about" id="about">
+      <div class="section-inner about-grid">
+        <div class="about-image fade-in">
+          <img
+            src="images/strawberry_cat.jpg"
+            alt="A warm reading nook inside Strawberry Cat with cushions and a window seat"
+            loading="lazy"
+            width="560" height="640">
+        </div>
+        <div class="about-copy fade-in">
+          <p class="eyebrow">About Strawberry Cat</p>
+          <h2 class="section-title">A small space, on purpose.</h2>
+          <p>We started Strawberry Cat because we couldn't find a café that let us stay. Most places want you in and out within the hour — we built ours the opposite way: soft chairs, low music, and enough quiet corners that you can read, study, or talk for as long as you like.</p>
+          <p>Our food follows the same idea. No long menus, no fuss — just a small batch of pastries, cakes, and drinks made well, with strawberries and cream doing most of the talking. If a cat happens to nap on the windowsill while you eat, that's just Tuesday here.</p>
+          <ul class="about-points">
+            <li><span aria-hidden="true">🍓</span> Simple, seasonal bakes made daily</li>
+            <li><span aria-hidden="true">🐾</span> A calm room built for staying, not rushing</li>
+            <li><span aria-hidden="true">☕</span> Good coffee, gentle music, soft seating</li>
+          </ul>
+            <span class="floating-icon icon-1" aria-hidden="true">🐾</span>
+            <span class="floating-icon icon-2" aria-hidden="true">🍓</span>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="divider divider-wave" aria-hidden="true"></div>
+
+    <!-- ===================== MENU ===================== -->
+    <section class="menu" id="menu">
+      <div class="section-inner">
+        <div class="section-head fade-in">
+          <p class="eyebrow">From the kitchen</p>
+          <h2 class="section-title">A short menu, made properly.</h2>
+          <p class="section-lede">We keep our list small so every plate gets full attention. Ask us what's fresh today — it changes with the season.</p>
+            <span class="floating-icon icon-2" aria-hidden="true">🐾</span>
+        </div>
+
+        <div class="menu-tabs fade-in" role="tablist" aria-label="Menu categories">
+          <button class="menu-tab is-active" role="tab" aria-selected="true" id="tab-bakes" aria-controls="panel-bakes">Bakes</button>
+          <button class="menu-tab" role="tab" aria-selected="false" id="tab-drinks" aria-controls="panel-drinks">Drinks</button>
+          <button class="menu-tab" role="tab" aria-selected="false" id="tab-sets" aria-controls="panel-sets">Light Sets</button>
+            <span class="floating-icon icon-2" aria-hidden="true">🍓</span>
+        </div>
+
+        <div class="menu-panel" id="panel-bakes" role="tabpanel" aria-labelledby="tab-bakes">
+          <div class="menu-grid fade-in">
+            <article class="menu-item">
+              <h3>Strawberry Shortcake</h3>
+              <p>Soft sponge, whipped cream, fresh strawberries.</p>
+              <span class="price">RM 14</span>
+            </article>
+            <article class="menu-item">
+              <h3>Cat-Ear Croissant</h3>
+              <p>Buttery croissant, a playful twist on a classic shape.</p>
+              <span class="price">RM 9</span>
+            </article>
+            <article class="menu-item">
+              <h3>Honey Milk Bread</h3>
+              <p>Pillowy soft loaf, lightly sweet, best toasted.</p>
+              <span class="price">RM 8</span>
+            </article>
+            <article class="menu-item">
+              <h3>Strawberry Cream Tart</h3>
+              <p>Crisp shell, vanilla custard, glazed strawberries.</p>
+              <span class="price">RM 12</span>
+            </article>
+          </div>
+        </div>
+
+        <div class="menu-panel is-hidden" id="panel-drinks" role="tabpanel" aria-labelledby="tab-drinks" hidden>
+          <div class="menu-grid fade-in">
+            <article class="menu-item">
+              <h3>Strawberry Latte</h3>
+              <p>Espresso, steamed milk, real strawberry puree.</p>
+              <span class="price">RM 11</span>
+            </article>
+            <article class="menu-item">
+              <h3>Warm Hojicha</h3>
+              <p>Roasted Japanese green tea, gently smoky and calm.</p>
+              <span class="price">RM 9</span>
+            </article>
+            <article class="menu-item">
+              <h3>House Filter Coffee</h3>
+              <p>Slow-brewed, light roast, served black or with milk.</p>
+              <span class="price">RM 8</span>
+            </article>
+            <article class="menu-item">
+              <h3>Cream Soda Float</h3>
+              <p>Strawberry soda, vanilla ice cream, a paw-print wafer.</p>
+              <span class="price">RM 13</span>
+            </article>
+          </div>
+        </div>
+
+        <div class="menu-panel is-hidden" id="panel-sets" role="tabpanel" aria-labelledby="tab-sets" hidden>
+          <div class="menu-grid fade-in">
+            <article class="menu-item">
+              <h3>Study Set</h3>
+              <p>Filter coffee, a slice of milk bread, and free wifi.</p>
+              <span class="price">RM 15</span>
+            </article>
+            <article class="menu-item">
+              <h3>Quiet Date Set</h3>
+              <p>Two drinks, one shortcake to share.</p>
+              <span class="price">RM 28</span>
+            </article>
+            <article class="menu-item">
+              <h3>Afternoon Pause</h3>
+              <p>Hojicha, a tart, and a window seat (if free).</p>
+              <span class="price">RM 17</span>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider divider-scallop" aria-hidden="true"></div>
+
+    <!-- ===================== GALLERY ===================== -->
+    <section class="gallery" id="gallery">
+      <div class="section-inner">
+        <div class="section-head fade-in">
+          <p class="eyebrow">A peek inside</p>
+          <h2 class="section-title">Soft light, slow afternoons.</h2>
+        </div>
+
+        <div class="gallery-grid fade-in">
+          <figure class="gallery-item">
+            <img src="images/photo1.jpg" alt="Window seat with cushions overlooking the street" loading="lazy" width="400" height="400">
+          </figure>
+          <figure class="gallery-item">
+            <img src="images/photo2.jpg" alt="Close-up of a strawberry tart on a ceramic plate" loading="lazy" width="400" height="400">
+          </figure>
+        <figure class="gallery-item">
+            <img src="images/photo3.jpg" alt="Close-up of a strawberry tart on a ceramic plate" loading="lazy" width="400" height="400">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider divider-wave" aria-hidden="true"></div>
+
+    <!-- ===================== REVIEWS ===================== -->
+    <section class="reviews" id="reviews">
+      <div class="section-inner">
+        <div class="section-head fade-in">
+          <p class="eyebrow">Kind words</p>
+          <h2 class="section-title">What our regulars say.</h2>
+        </div>
+
+        <div class="reviews-grid fade-in">
+          <blockquote class="review-card">
+            <p>"The only café where I've stayed for four hours and didn't feel guilty about it. Quiet, warm, and the shortcake is honestly perfect."</p>
+            <footer>— Aisyah L., student</footer>
+          </blockquote>
+          <blockquote class="review-card">
+            <p>"Took my first date here on purpose. Soft lighting, no pressure, great coffee. We've been back three times since."</p>
+            <footer>— Aiman R., regular</footer>
+          </blockquote>
+          <blockquote class="review-card">
+            <p>"As a tourist I wasn't expecting to find a café this calm in the middle of the city. Already planning my next visit."</p>
+            <footer>— Sara K., visitor</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider divider-scallop" aria-hidden="true"></div>
+
+    <!-- ===================== VISIT US ===================== -->
+    <section class="visit" id="visit">
+      <div class="section-inner visit-grid">
+        <div class="visit-copy fade-in">
+          <p class="eyebrow">Find us</p>
+          <h2 class="section-title">Come sit with us.</h2>
+          <dl class="visit-details">
+            <div>
+              <dt>Address</dt>
+              <dd>12 Jalan Kucing Manis, Bukit Bintang, Kuala Lumpur</dd>
+            </div>
+            <div>
+              <dt>Hours</dt>
+              <dd>Mon–Fri: 8am – 8pm<br>Sat–Sun: 9am – 9pm</dd>
+            </div>
+            <div>
+              <dt>Good to know</dt>
+              <dd>Free wifi, quiet zone upstairs, wheelchair accessible entrance.</dd>
+            </div>
+          </dl>
+          <a class="btn btn-primary" href="https://maps.google.com" target="_blank" rel="noopener noreferrer">Get Directions</a>
+        </div>
+        <div class="visit-map fade-in" aria-label="Map location placeholder">
+          <iframe
+            title="Strawberry Cat location map"
+            src="https://maps.google.com/maps?q=Bukit%20Bintang%20Kuala%20Lumpur&t=&z=14&ie=UTF8&iwloc=&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider divider-wave" aria-hidden="true"></div>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="contact" id="contact">
+      <div class="section-inner contact-grid">
+        <div class="contact-copy fade-in">
+          <p class="eyebrow">Say hello</p>
+          <h2 class="section-title">Questions, bookings, or just to say hi.</h2>
+          <p>Send us a note and we'll get back to you within a day. For group bookings of 6 or more, please mention your preferred date and time.</p>
+          <ul class="contact-info">
+            <li><span aria-hidden="true">✉️</span> hello@strawberrycat-bakery.com</li>
+            <li><span aria-hidden="true">📞</span> +60 12-345 6789</li>
+            <li><span aria-hidden="true">📍</span> 12 Jalan Kucing Manis, Bukit Bintang, KL</li>
+          </ul>
+        </div>
+
+        <form class="contact-form fade-in" id="contactForm" novalidate>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="section-inner footer-grid">
+      <div class="footer-brand">
+        <span class="logo-text">Strawberry Cat</span>
+        <p>A small bakery. Stay as long as you like.</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#visit">Visit Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="footer-social" aria-label="Social media links">
+        <a href="#" aria-label="Strawberry Cat on Instagram">Instagram</a>
+        <a href="#" aria-label="Strawberry Cat on Facebook">Facebook</a>
+      </div>
+    </div>
+    <p class="footer-copy">&copy; <span id="year"></span> Strawberry Cat Bakery. All rights reserved.</p>
+  </footer>
+
+  <!-- Back to top -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5l-7 7h4v7h6v-7h4z"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
